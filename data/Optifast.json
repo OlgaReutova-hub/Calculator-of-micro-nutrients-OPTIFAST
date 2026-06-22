@@ -1,0 +1,33 @@
+{
+  "label": "OPTIFAST, 1 порция",
+  "kcal": 201,
+  "nutrients": {
+    "protein_g": 20,
+    "fat_g": 4.5,
+    "carbs_g": 18.2,
+    "fiber_g": 3.6,
+    "cholesterol_mg": 10,
+    "vitamin_a_mcg": 345,
+    "vitamin_b1_mg": 0.58,
+    "vitamin_b2_mg": 0.74,
+    "vitamin_b6_mg": 1,
+    "niacin_b3_mg": 8,
+    "vitamin_b12_mcg": 1.1,
+    "folate_mcg": 110,
+    "pantothenic_acid_mg": 2.7,
+    "vitamin_c_mg": 40,
+    "vitamin_d_mcg": 3.7,
+    "vitamin_e_mg": 7.4,
+    "vitamin_k_mcg": 31.8,
+    "calcium_mg": 420,
+    "phosphorus_mg": 360,
+    "magnesium_mg": 160,
+    "potassium_mg": 955,
+    "sodium_mg": 215,
+    "iron_mg": 8,
+    "zinc_mg": 4.2,
+    "iodine_mcg": 98,
+    "copper_mg": 1.1,
+    "manganese_mg": 0.8
+  }
+}

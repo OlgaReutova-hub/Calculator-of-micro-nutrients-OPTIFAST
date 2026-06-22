@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Калькулятор микронутриентов</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1 class="app-heading">
+        Калькулятор поступления микронутриентов
+        <span>на низкокалорийной диете</span>
+      </h1>
+    </header>
+
+    <main id="app-root">
+      <div class="loading" id="loading">Загрузка данных…</div>
+      <div class="error hidden" id="load-error"></div>
+      <div class="hidden" id="app-content">
+        <section class="controls">
+          <div class="control-group">
+            <p class="section-label">Пол</p>
+            <div class="radio-row" id="gender-group" role="radiogroup" aria-label="Пол">
+              <label class="radio-option">
+                <input type="radio" name="gender" value="female" checked>
+                <span>Женщина</span>
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="gender" value="male">
+                <span>Мужчина</span>
+              </label>
+            </div>
+          </div>
+
+          <div class="control-group">
+            <p class="section-label">Калорийность меню</p>
+            <div class="choice-row" id="kcal-group"></div>
+          </div>
+
+          <div class="control-group">
+            <p class="section-label">Тип меню</p>
+            <div class="choice-row" id="meal-type-group"></div>
+          </div>
+
+          <div class="show-row">
+            <button type="button" class="btn btn-primary" id="show-menu-btn" disabled>Показать меню</button>
+            <div class="hint-box hidden" id="selection-hint">
+              Выберите калорийность и тип меню, затем нажмите «Показать меню».
+            </div>
+          </div>
+        </section>
+
+        <section class="results hidden" id="results">
+          <div class="summary-pills" id="summary-pills"></div>
+
+          <div class="results-grid">
+            <div class="col-menu">
+              <h3 class="column-heading" id="menu-title"></h3>
+              <div id="menu-cards"></div>
+              <div class="menu-disclaimer" id="menu-disclaimer"></div>
+            </div>
+
+            <div class="col-nutrients">
+              <h3 class="column-heading">Макро- и микронутриенты</h3>
+
+              <div class="optifast-toggle-row" id="optifast-toggle-row">
+                <span class="optifast-toggle-label active" id="label-diet">Диета</span>
+                <label class="toggle-switch" aria-label="Диета + 1 саше OPTIFAST">
+                  <input type="checkbox" id="optifast-toggle">
+                  <span class="toggle-track"><span class="toggle-thumb"></span></span>
+                </label>
+                <span class="optifast-toggle-label" id="label-optifast">Диета + 1 саше OPTIFAST</span>
+              </div>
+
+              <div id="nutrients-panel"></div>
+
+              <p class="indicator-legend" id="indicator-legend"></p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/app.js" defer></script>
+</body>
+</html>
